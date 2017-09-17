@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block carousel %}
+{% endblock %}
+{% block vscroll %}
+{% endblock %}
+{% block video %}
+{% endblock %}
+{% block qavids %}
+{% endblock %}
+{% block subscribe %}
+{% endblock %}
+{% block title %}<div id="reviewtitle" class="container"><strong><h4>Latest Reviews</h4></strong>{% endblock %}
+{% block newsarticle %}
+{% for article in article_info %}
+    <div class="col-md-2 col-sm-3 text-center">
+       <a href="/media/{{ article.image }}">
+           <img src="/media/{{ article.image }}" id="article-img">
+       </a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="articleText">
+    <br>
+    <br>
+    <strong><h3 class="articleHeader">{{ article.headline }}</h3></strong>
+    <div class="articlecontent">
+    <p>{{ article.content|safe|truncatewords:"50"|linebreaks }}
+    <p><button class="btn btn-default" onclick="location.href='/QA_blog/reviewsdetail/{{article.id}}'">Read More</button></p>
+    </div>
+    <p><strong>Last updated by:</strong> {{ article.reporter.full_name }}</p>
+    <p><strong>Published on:</strong> {{ article.pub_date|date:"F j, Y" }}</p>
+    <p><strong>Rating:</strong> {{ article.rating}}</p>
+    <br>
+    <hr id="articlehr">
+    </div>
+{% endfor %}
+{% endblock %}
+{% block highestrated %}
+<div class="col-md-4" id="highr">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4>Highest Rated</h4>
+          <ol id="rolreview">
+           <li>
+             <div>
+               <img class="reviewsimg" src="rock600x400.jpg">
+              <div class="container">
+               <p class="reviewp">The Troll's tongue in Hardanger, Norway</p>
+              </div>
+           </li>
+           <li>
+             <div>
+               <img class="reviewsimg" src="rock600x400.jpg">
+              <div class="container">
+               <p class="reviewp">The Troll's tongue in Hardanger, Norway</p>
+              </div>
+           </li>
+           <li>
+             <div>
+               <img class="reviewsimg" src="rock600x400.jpg">
+              <div class="container">
+               <p class="reviewp">The Troll's tongue in Hardanger, Norway</p>
+              </div>
+           </li>
+           <li>
+             <div>
+               <img class="reviewsimg" src="rock600x400.jpg">
+              <div class="container">
+               <p class="reviewp">The Troll's tongue in Hardanger, Norway</p>
+              </div>
+           </li>
+           <li>
+             <div>
+               <img class="reviewsimg" src="rock600x400.jpg">
+              <div class="container">
+               <p class="reviewp">The Troll's tongue in Hardanger, Norway</p>
+              </div>
+           </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    </div>
+{% endblock %}
+{% block TopFive %}
+{% endblock %}
+
+

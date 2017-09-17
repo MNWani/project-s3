@@ -1,0 +1,56 @@
+{% extends "reviews.html" %}
+{% load static %}
+{% block carousel %}
+{% endblock %}
+{% block vscroll %}
+{% endblock %}
+{% block video %}
+{% endblock %}
+{% block qavids %}
+{% endblock %}
+{% block subscribe %}
+{% endblock %}
+{% block title %}<div id="reviewtitle2" class="container"><strong><h4 id="reviewtitle2">Latest Reviews</h4></strong>{% endblock %}
+{% block newsarticle %}
+    <div class="col-md-2 col-sm-3 text-center">
+       <a href="/media/{{ detail.image }}">
+           <img src="/media/{{ detail.image }}"id="article-img">
+       </a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="articleText">
+    <br>
+    <br>
+    <strong><h3 class="articleHeader2">{{ detail.headline }}</h3></strong>
+    <div class="articlecontent">
+    <p>{{ detail.content|linebreaks }}</p>
+    <p><button class="btn btn-default" onclick="location.href='/QA_blog/reviews/'">Back To Reviews</button></p>
+    </div>
+    <p><strong>Last updated by:</strong> {{ detail.reporter.full_name }}</p>
+    <p><strong>Published on:</strong> {{ detail.pub_date|date:"F j, Y" }}</p>
+    <p><strong>Rating:</strong> {{ detail.rating}}</p>
+    <br>
+    <hr>
+    </div>
+  <div id="reviewtitle2" class="container">
+  <p><h5>Click on the button to display our rating structure.</h5></p>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#RatingStructure">Rating structure</button>
+  <br>
+  <br>
+  <div id="RatingStructure" class="collapse">
+   <p></p>
+    <ol>
+      <li>Awful</li>
+      <li>Poor</li>
+      <li>Average</li>
+      <li>Good</li>
+      <li>Outstanding</li>
+    </ol>
+  </div>
+</div>
+{% endblock %}
+{% block TopFive %}
+{% endblock %}
