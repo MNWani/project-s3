@@ -14,52 +14,25 @@
 {% for videos in video_info %}
 <div class="container">
     <div class="row">
-        <div class="col-md-4">
+        <div id="video1" class="col-md-4">
             <span class="video"><iframe width="560" height="300" src="{{ videos.link }}" frameborder="0" allowfullscreen></iframe></span>
             <h4>{{ videos.title }}</h4>
-            <p>{{ videos.description }}</p>
-            <span><div class="viddes"><img src="/media/{{ videos.guide_image }}"></div></span>
+            <p class="video2">{{ videos.description }}</p>
+        </div>
+        <hr id="vidhr">
+        <div class="col-md-4">
+            <span><div><img id="guideimg" src="/media/{{ videos.guide_image }}"></div></span>
+        </div>
+        <div class="col-md-4">
             <span><div class="viddes">{{ videos.guide_name }}</div></span>
-            <span><div class="viddes">{{ videos.guide_description }}</div></span>
-            <span><div class="viddes">£{{ videos.guide_price }}</div></span>
-            <span><div class="viddes">{{ videos.paypal_form.sandbox }}</div></span>
+            <span><div class="viddes2">{{ videos.guide_description }}</div></span>
+            <span><div class="viddes3">£{{ videos.guide_price }}</div></span>
+            <span><div class="viddes4">{{ videos.paypal_form.sandbox }}</div></span>
         </div>
     </div>
 </div>
 {% endfor %}
 {% endblock %}
 {% block qavidtxt %}
-<div class="col-md-4" id="highr">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h4>Highest Rated</h4>
-          <ol id="rolreview">
-           <li>
-             <div>
-               <img class="reviewsimg" src="rock600x400.jpg">
-              <div class="container">
-               <p class="reviewp">The Troll's tongue in Hardanger, Norway</p>
-              </div>
-           </li>
-           <li>
-             <div>
-               <img class="reviewsimg" src="rock600x400.jpg">
-              <div class="container">
-               <p class="reviewp">The Troll's tongue in Hardanger, Norway</p>
-              </div>
-           </li>
-           <li>
-             <div>
-               <img class="reviewsimg" src="rock600x400.jpg">
-              <div class="container">
-               <p class="reviewp">The Troll's tongue in Hardanger, Norway</p>
-              </div>
-           </li>
-          </ol>
-        </div>
-      </div>
-    </div>
-    </div>
 {% endblock %}
 
