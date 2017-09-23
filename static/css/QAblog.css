@@ -135,12 +135,14 @@ img.rhomeimg{
 
 ol#rolhome{
     margin-left: 57px;
+    font-weight: bold;
 }
 
 p.rhomep{
     margin-top: 10px;
     margin-left: -14.3px;
     margin-bottom: 3%;
+    font-size: 12px;
 }
 
 div#subcribehm.row{
@@ -419,6 +421,53 @@ hr#vidhr{
     margin-top: -0.6%;
     margin-left: 1.3%;
     width: 94.4%;
+}
+
+div#logs.col-md-12{
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+input#id_username{
+    width: 41%;
+}
+
+input#id_password{
+    width: 41%;
+    margin-left: 1.3px;
+}
+
+img#logsimg{
+    margin-left: 41.1%;
+    margin-bottom: 3%;
+}
+
+button#logsbutton{
+    margin-top: 2%;
+    margin-left: 16.8%;
+    margin-bottom: 0.5%;
+}
+
+div#signs.modal-dialog{
+    margin-bottom: 0;
+    width: 59%;
+}
+
+img#signimg{
+    margin-left: 42%;
+    margin-bottom: 3%;
+}
+
+button#signbutton{
+    margin-top: 7px;
+}
+
+div#signslog.col-md-12{
+    margin-bottom: -25px;
+}
+
+div#signslab.panel-body{
+    margin-left: 19%;
 }
 
 @media screen and (min-width: 768px) {

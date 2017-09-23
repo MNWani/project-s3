@@ -11,23 +11,42 @@
 {% endblock %}
 {% block subscribe %}
 {% endblock %}
+{% block login %}
+{% endblock %}
+{% block vscroll %}
+{% endblock %}
 {% block title %}{% endblock %}
-{% block content %}
-  <h2>Sign up</h2>
-  <form method="post">
-    {% csrf_token %}
-    {% for field in form %}
-      <p>
-        {{ field.label_tag }}<br>
-        {{ field }}
-        {% if field.help_text %}
-          <small style="color: grey">{{ field.help_text }}</small>
-        {% endif %}
-        {% for error in field.errors %}
-          <p style="color: red">{{ error }}</p>
-        {% endfor %}
-      </p>
-    {% endfor %}
-    <button type="submit">Sign up</button>
-  </form>
+{% block signup %}
+<div class="container">
+  <div id="signslog" class="col-md-12">
+    <div id="signs" class="modal-dialog" style="margin-bottom:0">
+       <div class="modal-content">
+          <div class="panel-heading">
+              <img id="signimg" src="/static/images/logoA.png" alt="">
+          </div>
+          <div class="panel-body">
+              <form role="form">
+                 <fieldset>
+                   <form method="post">
+                    {% csrf_token %}
+                    {% for field in form %}
+                    <p>
+                      {{ field.label_tag }}<br>
+                      {{ field }}
+                      {% if field.help_text %}
+                      <small style="color: grey">{% autoescape off %}{{ field.help_text }}{% endautoescape %}</small>
+                    {% endif %}
+                    {% for error in field.errors %}
+                      <p style="color: red">{{ error }}</p>
+                    {% endfor %}
+                    </p>
+                    {% endfor %}
+                   <button id="signbutton" type="submit">Sign up</button>
+                 </fieldset>
+              </form>
+          </div>
+       </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

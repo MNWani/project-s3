@@ -97,6 +97,12 @@
 
 <body>
 
+{% block login %}
+{% endblock %}
+
+{% block signup %}
+{% endblock %}
+
 <div id="posthead">
     <h4>{% block title %}Latest News{% endblock %}</h4>
 </div>
@@ -128,41 +134,41 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h4>This Months Top Five</h4>
+          <h4>Top Five: October 2017</h4>
           <ol id="rolhome">
            <li>
              <div>
-               <img class="rhomeimg" src="rock600x400.jpg">
+               <img class="rhomeimg" src="/static/images/ZeldaBOW.jpg">
               <div class="container">
-               <p class="rhomep">The Troll's tongue in Hardanger, Norway</p>
+               <p class="rhomep">The Legend of Zelda: Breath of the Wild (Nintendo Switch, Wii U)</p>
               </div>
            </li>
            <li>
              <div>
-               <img class="rhomeimg" src="rock600x400.jpg">
+               <img class="rhomeimg" src="/static/images/Horizon.jpg">
               <div class="container">
-               <p class="rhomep">The Troll's tongue in Hardanger, Norway</p>
+               <p class="rhomep">Horizon: Zero Dawn (Playstation 4)</p>
               </div>
            </li>
            <li>
              <div>
-               <img class="rhomeimg" src="rock600x400.jpg">
+               <img class="rhomeimg" src="/static/images/prey.png">
               <div class="container">
-               <p class="rhomep">The Troll's tongue in Hardanger, Norway</p>
+               <p class="rhomep">Prey (Playstation 4, Xbox One, PC)</p>
               </div>
            </li>
            <li>
              <div>
-               <img class="rhomeimg" src="rock600x400.jpg">
+               <img class="rhomeimg" src="/static/images/mariokartdeluxe.jpg">
               <div class="container">
-               <p class="rhomep">The Troll's tongue in Hardanger, Norway</p>
+               <p class="rhomep">Mario Kart 8 (Nintendo Switch, Wii U)</p>
               </div>
            </li>
            <li>
              <div>
-               <img class="rhomeimg" src="rock600x400.jpg">
+               <img class="rhomeimg" src="/static/images/injustice_2.jpg">
               <div class="container">
-               <p class="rhomep">The Troll's tongue in Hardanger, Norway</p>
+               <p class="rhomep">Injustice 2 (PlayStation 4, Xbox One, Android, iOS)</p>
               </div>
            </li>
           </ol>
@@ -224,8 +230,8 @@
               <li><a href="{%  url 'home' %}">Home</a></li>
               <li><a href="{%  url 'reviews' %}">Reviews</a></li>
               <li><a href="{%  url 'qa_corner' %}">QA Corner</a></li>
-              <li><a href="{%  url 'signup' %}">Sign Up</a></li>
               <li><a href="{%  url 'login' %}">Log In</a></li>
+              <li><a href="{%  url 'signup' %}">Sign Up</a></li>
           </ul>
        </div>
       </div>

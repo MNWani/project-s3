@@ -84,7 +84,7 @@ class Video(models.Model):
         return PayPalPaymentsForm(initial=paypal_dict)
  
     def __unicode__(self):
-        return self.link
+        return self.title
 
 
     
