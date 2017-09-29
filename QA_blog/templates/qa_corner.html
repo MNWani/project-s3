@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}<strong><h4>Walkthroughs</h4></strong>{% endblock %}
+{% block title %}<strong><h4>Game Store</h4></strong>{% endblock %}
 {% block carousel %}
 {% endblock %}
 {% block vscroll %}
@@ -10,6 +10,22 @@
 {% endblock %}
 {% block login %}
 {% endblock %}
+{% block searchbar %}
+<h5 id="searchbar">Search Games</h5>
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <form id="custom-search-form" class="form-search form-horizontal pull-right">
+                <div class="input-append span12">
+                    <input type="text" class="search-query" placeholder="Search">
+                    <button type="submit" class="btn btn-link"><i class="icon-search"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
 {% block qavids %}
 {% block subscribe %}
 {% endblock %}
@@ -23,12 +39,12 @@
         </div>
         <hr id="vidhr">
         <div class="col-md-4">
-            <span><div><img id="guideimg" src="/media/{{ videos.guide_image }}"></div></span>
+            <span><div><img id="guideimg" src="/media/{{ videos.game_image }}"></div></span>
         </div>
         <div class="col-md-4">
-            <span><div class="viddes">{{ videos.guide_name }}</div></span>
-            <span><div class="viddes2">{{ videos.guide_description }}</div></span>
-            <span><div class="viddes3">£{{ videos.guide_price }}</div></span>
+            <span><div class="viddes">{{ videos.game_name }}</div></span>
+            <span><div class="viddes2">{{ videos.game_description }}</div></span>
+            <span><div class="viddes3">£{{ videos.game_price }}</div></span>
             <span><div class="viddes4">{{ videos.paypal_form.sandbox }}</div></span>
         </div>
     </div>

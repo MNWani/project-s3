@@ -151,12 +151,20 @@ div#subcribehm.row{
 }
 
 div.thumbnail.center.well.well-small.text-center{
-    background-color:#686868;
+    background-color: #555555;
     border: 1px solid #686868;
 }
 
-h2#subscribetxt{
-    color: #A8A8A8;
+img#newsimg{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 7px;
+}
+
+input#newssubscribe.btn.btn-large{
+   color: #555555;
+   background-color: #ffffff;
+   border-color: rgba(0, 0, 0, 0.1)
 }
 
 h1, h1 a {
@@ -469,6 +477,20 @@ div#signslog.col-md-12{
 div#signslab.panel-body{
     margin-left: 19%;
 }
+
+h5#searchbar{
+    margin-left: 81.1%;
+    margin-top: -3%;
+    font-size: 15px;
+    color: #A8A8A8;
+}
+
+form#custom-search-form.form-search.form-horizontal.pull-right{
+    margin-bottom: 20px;
+}
+
+
+
 
 @media screen and (min-width: 768px) {
     #masthead h1 {
