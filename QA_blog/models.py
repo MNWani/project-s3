@@ -63,18 +63,18 @@ class Video(models.Model):
     title = models.CharField(max_length=70)
     description = models.CharField(max_length=200)
     link = models.URLField()
-    game_name = models.CharField(max_length=254)
-    game_image = models.ImageField(upload_to="images", blank=True, null=True)
-    game_description = models.TextField(max_length=400, null=True, blank=True)
-    game_price = models.DecimalField(max_digits=6, decimal_places=2, default=Decimal('0.00'))
+    guide_name = models.CharField(max_length=254)
+    guide_image = models.ImageField(upload_to="images", blank=True, null=True)
+    guide_description = models.TextField(max_length=400, null=True, blank=True)
+    guide_price = models.DecimalField(max_digits=6, decimal_places=2, default=Decimal('0.00'))
 
     @property
     def paypal_form(self):
         paypal_dict = {
             "business": settings.PAYPAL_RECEIVER_EMAIL,
-            "amount": self.game_price,
+            "amount": self.guide_price,
             "currency": "GBP",
-            "item_name": self.game_name,
+            "item_name": self.guide_name,
             "invoice": "%s-%s" % (self.pk, uuid.uuid4()),
             "notify_url": settings.PAYPAL_NOTIFY_URL,
             "return_url": "%s/paypal-return" % settings.SITE_URL,

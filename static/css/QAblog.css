@@ -277,8 +277,8 @@ div#myCarousel.carousel.slide{
     position: absolute;
     z-index: 1;
     display: table;
-    width: 20%;
-    margin-left: -4%;
+    width: 35%;
+    margin-left: -10%;
 }
 
 .carousel-caption h2{
