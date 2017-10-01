@@ -2,11 +2,9 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
     font-family: Arial;
-    background-color: #555555;
+    background-color: #f5f5f5;
     color: #202020;
 }
-
-
 
 /*Home Page*/
 
@@ -30,9 +28,14 @@ hr {
 
 .panel{
   height: 250vh;
-  width: 100%;
+  width: 96%;
   float: left;
-  margin-bottom: -3%;
+  margin-bottom: -8%;
+}
+
+div.panel-body{
+    padding: 15px;
+    padding-top: 27px;
 }
 
 .v-scroll{
@@ -40,7 +43,8 @@ hr {
 }
 
 div.panel.v-scroll{
-    background-color: #555555;
+    background-color: #E8E8E8;
+    margin-left: 20.5%;
 }
 
 .col-xs-9{
@@ -52,6 +56,18 @@ div.panel.v-scroll{
     width: auto;
 }
 
+div.navbar.navbar-inverse.navbar-static-top{
+   border-bottom: 1px #f5f5f5;
+}
+
+hr#carouhr{
+    width: 921.9px;
+    margin-left: 14.4%;
+    background-color:#BEBEBE;
+    height: 1px;
+    border: 0;
+}
+
 div#TopFive.col-md-4 {
     margin-top: -54px;
     margin-left: 1.2%;
@@ -59,7 +75,7 @@ div#TopFive.col-md-4 {
 }
 
 #TopFive h4 {
-    color: #A8A8A8;
+    color:black; 
     margin-bottom: 27px;
     margin-left: 8.3%;
 }
@@ -100,15 +116,18 @@ div#posthead{
 }
 
 #posthead h4 {
-    color:  #A8A8A8;
+    color:black; 
+    margin-left: 8.2%;
 }
 
 h3#posttitle {
-    color: #A8A8A8
+    color: black;
+    font-size: 19px;
 }
 
 h3#posttitle2{
-    color: #A8A8A8
+    color: black;
+    font-size: 19px;
 }
 
 hr#posthr{
@@ -129,12 +148,15 @@ div#postxt2.col-xs-9{
 }
 
 img.rhomeimg{
-    width: 400px;
-    height: 200px;
+    width: 323px;
+    height: 175px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
 }
 
 ol#rolhome{
-    margin-left: 57px;
+    margin-left: 58px;
     font-weight: bold;
 }
 
@@ -142,17 +164,20 @@ p.rhomep{
     margin-top: 10px;
     margin-left: -14.3px;
     margin-bottom: 3%;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 div#subcribehm.row{
-    margin-left: 58%;
-    margin-top: -25%;
+    margin-left: 61.3%;
+    margin-top: -32%;
+    width: 30%;
+    font-size: 12px;
 }
 
 div.thumbnail.center.well.well-small.text-center{
-    background-color: #555555;
-    border: 1px solid #686868;
+    background-color: #E8E8E8;
+    border: 1px solid #E8E8E8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 img#newsimg{
@@ -203,13 +228,11 @@ h5 {
     color: #12AB82;
 }
 
-
-
 img#post-img{
     margin-top: -13px;
     margin-left: 0;
-    width: 525px;
-    height: 230px;
+    width: 500px;
+    height: 280px;
 }
 
 a, a:hover {
@@ -269,8 +292,10 @@ a, a:hover {
 
 div#myCarousel.carousel.slide{
     height: 290px;
-    width: 1160px;
-    margin-left: 62px;
+    width: 920px;
+    margin-top: -4px;
+    margin-left: 185px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .carousel-caption {
@@ -279,17 +304,28 @@ div#myCarousel.carousel.slide{
     display: table;
     width: 35%;
     margin-left: -10%;
+    font-size: 13px;
 }
 
 .carousel-caption h2{
     color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /*Reviews Page*/
 
 h3.articleHeader{
-    margin-top: -7%;
-    color: #A8A8A8;
+    color: black;
+    margin-top: 9%;
+    font-size: 19px;
+}
+
+h3.articleHeader2{
+   margin-bottom: 2%;
+   color: black;
+   margin-top: 9%;
+   font-size: 19px;
 }
 
 div.articleText {
@@ -298,32 +334,34 @@ div.articleText {
 
 img#article-img {
     margin-top: 2%;
-    margin-left: -14%;
-    width: 650px;
-    height: 250px;
+    margin-left: -32%;
+    width: 480px;
+    height: 280px;
 }
 
 div.articlescroll{
-    width: 667px;
+    width: 509px;
     height: 212vh;
     overflow-x: hidden;
     overflow-y: scroll;
-    margin-left: 10%;
+    margin-left: 24.5%;
     margin-bottom: 3%;
+    background-color: #E8E8E8;
+    padding: 15px;
+    padding-top: 11px;
 }
 
 div.articlecontent{
     text-align: justify;
-    width: 650px;
+    width: 476px;
 }
 
 hr#articlehr{
-    margin-top: 20px;
+    margin-top: 8px;
     margin-bottom: 20px;
     border: 0;
     border-top: 1px solid #686868;
-    width: 98%;
-    margin-left: 2px;
+    width: 100.3%;
 }
 
 div#highr.col-md-4{
@@ -332,19 +370,22 @@ div#highr.col-md-4{
 }
 
 #highr h4{
-    color: #A8A8A8;
+    color: black;
     margin-bottom: 27px;
-    margin-left: 3.4%;
-    margin-top: -0px
+    margin-left: 1.2%;
+    margin-top: -0px;
 }
 
 img.reviewsimg{
-    width: 400px;
-    height: 200px;
+    width: 323px;
+    height: 175px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
 }
 
 #reviewtitle h4{
-    margin-left: -3.2%;
+    margin-left: -1.6%;
 }
 
 #reviewtitle2 h5{
@@ -359,21 +400,17 @@ button.btn.btn-info{
     margin-left: -1.3%;
 }
 
-div#RatingStructure.collapse.in{
-   
-
-}
-
-h3.articleHeader2{
-    margin-top: -5%;
-    margin-bottom: 2%;
-    color: #A8A8A8;
-}
-
 p.reviewp{
     margin-top: 10px;
     margin-left: -14.3px;
     margin-bottom: 3%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+ol#rolreview{
+    font-weight: bold;
+    margin-left: -2.3%
 }
 
 /*QA Corner Page*/
@@ -487,6 +524,12 @@ h5#searchbar{
 
 form#custom-search-form.form-search.form-horizontal.pull-right{
     margin-bottom: 20px;
+}
+
+/*Login Page*/
+
+div.modal-content{
+    background-color: #E8E8E8;
 }
 
 
