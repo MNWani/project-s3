@@ -27,7 +27,7 @@ hr {
 }
 
 .panel{
-  height: 250vh;
+  height: 230vh;
   width: 96%;
   float: left;
   margin-bottom: -8%;
@@ -168,10 +168,14 @@ p.rhomep{
 }
 
 div#subcribehm.row{
-    margin-left: 61.3%;
-    margin-top: -32%;
-    width: 30%;
+    margin-left: 62.6%;
+    margin-top: -20%;
+    width: 28%;
     font-size: 12px;
+}
+
+.thumbnail.center.well.well-small.text-center p{
+    font-weight: bold;
 }
 
 div.thumbnail.center.well.well-small.text-center{
@@ -313,6 +317,26 @@ div#myCarousel.carousel.slide{
     font-weight: bold;
 }
 
+div#homeimgrow.row{
+    width: 80%;
+    margin-left: 10.4%;
+}
+
+ div.homeimgtxt{
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 6px;
+ }
+
+ div.homeimghead{
+    margin-left: 14.4%;
+    margin-bottom: 2%;
+ }
+
+ .homeimghead h4{
+    color: black;
+ }
+
 /*Reviews Page*/
 
 h3.articleHeader{
@@ -341,11 +365,11 @@ img#article-img {
 
 div.articlescroll{
     width: 509px;
-    height: 212vh;
+    height: 194vh;
     overflow-x: hidden;
     overflow-y: scroll;
     margin-left: 24.5%;
-    margin-bottom: 3%;
+    margin-bottom: -3%;
     background-color: #E8E8E8;
     padding: 15px;
     padding-top: 11px;
@@ -371,9 +395,9 @@ div#highr.col-md-4{
 
 #highr h4{
     color: black;
-    margin-bottom: 27px;
+    margin-bottom: 36px;
     margin-left: 1.2%;
-    margin-top: -0px;
+    margin-top: -55px;
 }
 
 img.reviewsimg{
@@ -404,7 +428,7 @@ p.reviewp{
     margin-top: 10px;
     margin-left: -14.3px;
     margin-bottom: 3%;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
 }
 
@@ -414,6 +438,10 @@ ol#rolreview{
 }
 
 /*QA Corner Page*/
+
+h4#qatitle{
+    margin-left: 0px;
+}
 
 div.videoscroll{
     width: 1130px;
@@ -516,14 +544,15 @@ div#signslab.panel-body{
 }
 
 h5#searchbar{
-    margin-left: 81.1%;
-    margin-top: -3%;
+    margin-left: 78.5%;
+    margin-top: -3.5%;
     font-size: 15px;
-    color: #A8A8A8;
+    color: black;
 }
 
 form#custom-search-form.form-search.form-horizontal.pull-right{
     margin-bottom: 20px;
+    margin-right: 7.5%;
 }
 
 /*Login Page*/
