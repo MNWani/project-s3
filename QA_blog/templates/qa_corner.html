@@ -33,7 +33,7 @@
 <div class="container">
     <div class="row">
         <div id="video1" class="col-md-4">
-            <span class="video"><iframe width="560" height="300" src="{{ videos.link }}" frameborder="0" allowfullscreen></iframe></span>
+            <span class="video"><iframe width="450" height="250" src="{{ videos.link }}" frameborder="0" allowfullscreen></iframe></span>
             <h4>{{ videos.title }}</h4>
             <p class="video2">{{ videos.description }}</p>
         </div>
@@ -41,7 +41,7 @@
         <div class="col-md-4">
             <span><div><img id="guideimg" src="/media/{{ videos.guide_image }}"></div></span>
         </div>
-        <div class="col-md-4">
+        <div id="guidePP"class="col-md-4">
             <span><div class="viddes">{{ videos.guide_name }}</div></span>
             <span><div class="viddes2">{{ videos.guide_description }}</div></span>
             <span><div class="viddes3">£{{ videos.guide_price }}</div></span>
