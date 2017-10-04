@@ -165,6 +165,28 @@
 {% block qavidtxt %}
 {% endblock %}
 
+{% block reviewscroll %}
+<div>
+<div class="articlescroll">
+<!--article entries-->
+{% block newsarticle %}
+{% endblock %}
+<!--article entries-->
+</div>
+</div>
+{% endblock %}
+
+{% block video %}
+<div>
+<div class="videoscroll">
+<!--video entries-->
+{% block qavids %}
+{% endblock %}
+<!--video entries-->
+</div>
+</div>
+{% endblock %}
+
 {% block TopFive %}
     <div class="col-md-4" id="TopFive">
     <div class="container">
@@ -213,8 +235,6 @@
     </div>
     </div>
 {% endblock %}
-  </div>
-</div>
 
 {% block subscribe %}
 <div class="container">
@@ -235,28 +255,6 @@
           </div>
         </div>
   {% endblock %}
-
-{% block reviewscroll %}
-<div>
-<div class="articlescroll">
-<!--article entries-->
-{% block newsarticle %}
-{% endblock %}
-<!--article entries-->
-</div>
-</div>
-{% endblock %}
-
-{% block video %}
-<div>
-<div class="videoscroll">
-<!--video entries-->
-{% block qavids %}
-{% endblock %}
-<!--video entries-->
-</div>
-</div>
-{% endblock %}
 
 <footer>
       <div class="navbar navbar-inverse navbar-bottom">

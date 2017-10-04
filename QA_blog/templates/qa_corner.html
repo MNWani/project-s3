@@ -8,7 +8,11 @@
 {% endblock %}
 {% block TopFive %}
 {% endblock %}
+{% block qavidtxt %}
+{% endblock %}
 {% block login %}
+{% endblock %}
+{% block signup %}
 {% endblock %}
 {% block searchbar %}
 <h5 id="searchbar">Search Guides</h5>
@@ -34,7 +38,7 @@
     <div class="row">
         <div id="video1" class="col-md-4">
             <span class="video"><iframe width="450" height="250" src="{{ videos.link }}" frameborder="0" allowfullscreen></iframe></span>
-            <h4>{{ videos.title }}</h4>
+            <h4 id="videotitle">{{ videos.title }}</h4>
             <p class="video2">{{ videos.description }}</p>
         </div>
         <hr id="vidhr">
@@ -51,6 +55,5 @@
 </div>
 {% endfor %}
 {% endblock %}
-{% block qavidtxt %}
-{% endblock %}
+
 
