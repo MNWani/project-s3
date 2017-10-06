@@ -25,11 +25,10 @@
           	  <img id="logsimg" src="/static/images/logoA.png" alt="">
           </div>
           <div id="signslab" class="panel-body">
-              <form role="form">
+              <form role="form" method="post">
                  <fieldset>
-                   <form method="post">
-    			   {% csrf_token %}
-    			   {{ form.as_p }}
+    			         {% csrf_token %}
+    			         {{ form.as_p }}
                    <button id="logsbutton" type="submit">Login</button>
                  </fieldset>
               </form>

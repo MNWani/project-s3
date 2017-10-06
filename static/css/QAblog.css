@@ -114,12 +114,12 @@ footer {
     margin-top: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
+    width: 1134px;
 }
 
 div.navbar.navbar-inverse.navbar-bottom{
     margin-bottom: -40px;
     margin-left: -1px;
-    margin-right: -1px;
     border-bottom: 0;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
     background-color: transparent;
@@ -482,7 +482,7 @@ div.viddes{
 div.viddes2{
     margin-left: -2%;
     margin-top: -3%;
-    padding-right: 50px;
+    padding-right: 55px;
 }
 
 div.viddes3{

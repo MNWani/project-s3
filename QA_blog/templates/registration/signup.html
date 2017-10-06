@@ -27,9 +27,8 @@
               <img id="signimg" src="/static/images/logoA.png" alt="">
           </div>
           <div class="panel-body">
-              <form role="form">
+              <form role="form" method="post">
                  <fieldset>
-                   <form method="post">
                     {% csrf_token %}
                     {% for field in form %}
                     <p>
