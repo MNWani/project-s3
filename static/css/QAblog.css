@@ -357,6 +357,18 @@ div#homeimgrow.row{
     font-weight: bold;
  }
 
+ li#subsbox {
+    color: #ea1717;
+}
+
+strong#subsboxtxt {
+    color: black;
+}
+
+strong#subsboxtxt:hover {
+   color: #ea1717; 
+}
+
 /*Reviews Page*/
 
 h3.articleHeader{
@@ -526,6 +538,37 @@ div#guidePP{
     margin-top: 47px;
 }
 
+h5#searchbar{
+    margin-left: 81.3%;
+    margin-top: -3.5%;
+    font-size: 15px;
+    color: black;
+}
+
+form#custom-search-form.form-search.form-horizontal.pull-right{
+    margin-bottom: 20px;
+    margin-right: 10%;
+}
+
+li#qabuy {
+    margin-top: 10px;
+    color: #ea1717;
+}
+
+strong#qabuytxt{
+    color: black;
+}
+
+strong#qabuytxt:hover{
+   color: #ea1717;
+}
+
+/*Login Page*/
+
+div.modal-content{
+    background-color: #E8E8E8;
+}
+
 div#logs.col-md-12{
     margin-top: 8%;
     margin-bottom: 8%;
@@ -549,7 +592,34 @@ button#logsbutton{
     margin-top: 2%;
     margin-left: 16.8%;
     margin-bottom: 0.5%;
+    color:black;
+    font-weight: 900;
 }
+
+button#logsbutton:hover{
+    color: #ea1717;
+}
+
+div#signslab.panel-body{
+    margin-left: 19%;
+}
+
+li#loginlink{
+    margin-top: 10px;
+    margin-left: 73%;
+    color: #ea1717;
+    font-weight: bold;
+}
+
+a#loginlinktxt{
+    color: black;
+}
+
+a#loginlinktxt:hover{
+    color: #ea1717;
+}
+
+/*Signup Page*/
 
 div#signs.modal-dialog{
     margin-bottom: 0;
@@ -563,35 +633,27 @@ img#signimg{
 
 button#signbutton{
     margin-top: 7px;
+    color: black;
+    font-weight: 900;
+}
+
+button#signbutton:hover{
+    color: #ea1717;
 }
 
 div#signslog.col-md-12{
     margin-bottom: -25px;
 }
 
-div#signslab.panel-body{
-    margin-left: 19%;
-}
+/*Logout Page*/
 
-h5#searchbar{
-    margin-left: 81.3%;
-    margin-top: -3.5%;
-    font-size: 15px;
-    color: black;
-}
-
-form#custom-search-form.form-search.form-horizontal.pull-right{
-    margin-bottom: 20px;
-    margin-right: 10%;
-}
-
-/*Login Page*/
-
-div.modal-content{
-    background-color: #E8E8E8;
-}
-
-
+h2#logouttxt{
+   margin-top: -1%;
+   margin-bottom: 10%;
+   margin-left: 60px;
+   color: #353434;
+   font-size: 20px;
+} 
 
 
 @media screen and (min-width: 768px) {

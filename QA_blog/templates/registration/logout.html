@@ -11,9 +11,22 @@
 {% endblock %}
 {% block subscribe %}
 {% endblock %}
-{% block login %}
+{% block vscroll %}
 {% endblock %}
 {% block title %}{% endblock %}
-{% block content %}
- <h2>You are now logged out</h2>
+{% block logout %}
+<div class="container">
+  <div id="logs" class="col-md-12">
+    <div class="modal-dialog" style="margin-bottom:0">
+       <div class="modal-content">
+          <div class="panel-heading">
+          	  <img id="logsimg" src="/static/images/logoA.png" alt="">
+          </div>
+          <div id="signslab" class="panel-body">
+             <h2 id="logouttxt"> You are now logged out</h2>
+          </div>
+       </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

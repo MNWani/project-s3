@@ -26,8 +26,12 @@
               <li ><a href="{%  url 'home' %}">Home</a></li>
               <li><a href="{%  url 'reviews' %}">Reviews</a></li>
               <li><a href="{%  url 'qa_corner' %}">QA Corner</a></li>
-              <li><a href="{%  url 'login' %}">Log In</a></li>
-              <li><a href="{%  url 'signup' %}">Sign Up</a></li>
+              {% if user.is_authenticated %}
+                 <li><a href="{% url 'logout' %}">Log Out</a></li>
+                {% else %}
+                 <li><a href="{% url 'login' %}">Log In</a></li>
+                 <li><a href="{%  url 'signup' %}">Sign Up</a></li>
+              {% endif %}
           </ul>
         </div>
     </div>
@@ -131,6 +135,9 @@
 {% endblock %}
 
 {% block login %}
+{% endblock %}
+
+{% block logout %}
 {% endblock %}
 
 {% block signup %}
@@ -248,7 +255,11 @@
                         <input type="text" id="" name="" placeholder="your@email.com">
                     </div>
                      <br />
-                    <input id="newssubscribe"type="submit" value="Subscribe Now!" class="btn btn-large" />
+                    {% if user.is_authenticated %}
+                      <input id="newssubscribe"type="submit" value="Subscribe Now!" class="btn btn-large" />
+                    {% else %}
+                      <li id="subsbox"><a href="{% url 'login' %}"><strong id="subsboxtxt">Log in to subscribe</strong></a></li>
+                    {% endif %} 
               </form>
               </div>    
             </div>
@@ -264,8 +275,12 @@
               <li><a href="{%  url 'home' %}">Home</a></li>
               <li><a href="{%  url 'reviews' %}">Reviews</a></li>
               <li><a href="{%  url 'qa_corner' %}">QA Corner</a></li>
-              <li><a href="{%  url 'login' %}">Log In</a></li>
-              <li><a href="{%  url 'signup' %}">Sign Up</a></li>
+              {% if user.is_authenticated %}
+                 <li><a href="{% url 'logout' %}">Log Out</a></li>
+                {% else %}
+                 <li><a href="{% url 'login' %}">Log In</a></li>
+                 <li><a href="{%  url 'signup' %}">Sign Up</a></li>
+              {% endif %}
           </ul>
        </div>
       </div>
