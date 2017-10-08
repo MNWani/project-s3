@@ -22,8 +22,6 @@ div.outer-wrapper{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-/*Home Page*/
-
 img#wrapperimg{
   float: left;
   width: 185px;
@@ -604,9 +602,9 @@ div#signslab.panel-body{
     margin-left: 19%;
 }
 
-li#loginlink{
+li#loginlink {
     margin-top: 10px;
-    margin-left: 73%;
+    margin-left: 84%;
     color: #ea1717;
     font-weight: bold;
 }
@@ -655,10 +653,87 @@ h2#logouttxt{
    font-size: 20px;
 } 
 
+/* Small devices (tablets, 768px and up) */
 
-@media screen and (min-width: 768px) {
-    #masthead h1 {
-        font-size: 80px;
-    }
+@media screen and (max-width: 768px) {
+
+/*Home Page*/ 
+
+#masthead h1 {
+   font-size: 80px;
+}
+
+div#myCarousel.carousel.slide{
+    width: 730px;
+    margin-left: 20px;
+}
+
+.carousel-inner>.item>img{
+   height: 290px;
+}
+
+hr#carouhr{
+   width: 727px;
+   margin-left: 21px; 
+}
+
+div.homeimgtxt{
+   margin-left: -54%;
+   margin-bottom: 20px;
+   font-size: 13.5px; 
+}
+
+img.thumbnail{
+   width:80%;
+   height:240px;
+   margin-left: -55%;
+}
+
+div#homeimgrow.row{
+   margin-left: 60%;
+}
+
+div#TopFive.col-md-4{
+   display: inline-block;
+   margin-left: 80px;
+   margin-top: 70px;
+}
+
+div.panel.v-scroll{
+    margin-left: 2%;
+}
+
+div.panel-body{
+    margin-left: 80px;
+}
+
+div#postxt.col-xs-9{
+   width: 100%; 
+}
+
+hr#posthr{
+   width: 86.2%; 
+}
+
+img.rhomeimg{
+   width: 400px;
+   height: 230px; 
+}
+
+#TopFive h4{
+   margin-left: -5%;
+}
+
+div#subcribehm.row{
+   margin-top: 30px;
+   margin-left: 38%; 
+   margin-bottom: -20px;
+}
+
+div.navbar.navbar-inverse.navbar-bottom{
+   margin-left: -10px; 
+}
+
+
 }
 
