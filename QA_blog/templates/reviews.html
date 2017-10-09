@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% block title %}
+{% endblock %}
 {% block carousel %}
 {% endblock %}
 {% block vscroll %}
@@ -13,7 +15,7 @@
 {% endblock %}
 {% block subscribe %}
 {% endblock %}
-{% block title %}<div id="reviewtitle" class="container"><strong><h4>Latest Reviews</h4></strong>{% endblock %}
+{% block titles %}<div id="reviewtitle" class="container"><strong><h4>Latest Reviews</h4></strong>{% endblock %}
 {% block newsarticle %}
 {% for article in article_info %}
     <div class="col-md-2 col-sm-3 text-center">
@@ -33,9 +35,9 @@
     <p>{{ article.content|safe|truncatewords:"50"|linebreaks }}
     <p><button class="btn btn-default" onclick="location.href='/QA_blog/reviewsdetail/{{article.id}}'">Read More</button></p>
     </div>
-    <p><strong>Last updated by:</strong> {{ article.reporter.full_name }}</p>
-    <p><strong>Published on:</strong> {{ article.pub_date|date:"F j, Y" }}</p>
-    <p><strong>Rating:</strong> {{ article.rating}}</p>
+    <p class="artbottxt"><strong>Last updated by:</strong> {{ article.reporter.full_name }}</p>
+    <p class="artbottxt"><strong>Published on:</strong> {{ article.pub_date|date:"F j, Y" }}</p>
+    <p class="artbottxt"><strong>Rating:</strong> {{ article.rating}}</p>
     <br>
     <hr id="articlehr">
     </div>
@@ -81,7 +83,7 @@
              <div>
                <img class="reviewsimg" src="/static/images/DivinityOS2R.jpg">
               <div class="container">
-               <p class="reviewp">Divinity Original Sin 2</p>
+               <p id="dobott" class="reviewp">Divinity Original Sin 2</p>
               </div>
            </li>
           </ol>
