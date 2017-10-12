@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
     <link rel="stylesheet" href="{% static "css/QAblog.css" %}">
     <link rel="stylesheet" href="{% static "font-awesome-4.7.0/css/font-awesome.min.css" %}">
+    <link rel="shortcut icon" href="{% static 'favicon/favicon.ico' %}"/>
 </head>
 
 <body>
@@ -271,8 +272,8 @@
   {% endblock %}
   
 <footer>
-      <div class="navbar navbar-inverse navbar-bottom">
-       <div class="container-fluid">
+    <div class="navbar navbar-inverse navbar-bottom">
+      <div class="container-fluid">
         <a class="navbar-brand" href="./"></a>
           <ul class="nav navbar-nav">
               <li class="navtxt"><a href="{%  url 'home' %}">Home</a></li>
@@ -285,7 +286,14 @@
                  <li class="navtxt"><a href="{%  url 'signup' %}">Sign Up</a></li>
               {% endif %}
           </ul>
-       </div>
+           <div class="row">
+            <div class="col-lg-6">
+              <strong id="socialbtns">Connect with us on:</strong><br>
+               <a id="sbtn1" target="_blank" class="btn btn-social-icon btn-facebook" href="https://www.facebook.com"><span class="fa fa-facebook"></span></a>
+               <a id="sbtn2" target="_blank" class="btn btn-social-icon btn-twitter" href="https://twitter.com"><span class="fa fa-twitter"></span></a>
+               <a id="sbtn3" target="_blank" class="btn btn-social-icon btn-google" href="https://plus.google.com/explore"><span class="fa fa-google"></span></a>
+            </div>
+           </div>
       </div>
 </footer>
 </div>

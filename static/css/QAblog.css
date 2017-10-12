@@ -117,6 +117,30 @@ footer {
     width: 1134px;
 }
 
+strong#socialbtns{
+  float: right;
+  margin-top: 15px;
+  color: white;  
+}
+
+a#sbtn1.btn.btn-social-icon.btn-facebook{
+  float: right;
+  margin-right: -35%;
+  margin-top: -11px;  
+}
+
+a#sbtn2.btn.btn-social-icon.btn-twitter{
+  float: right;
+  margin-right: -43%;
+  margin-top: -11px;  
+}
+
+a#sbtn3.btn.btn-social-icon.btn-google{
+  float: right;
+  margin-right: -50%;
+  margin-top: -11px;  
+}
+
 div.navbar.navbar-inverse.navbar-bottom{
     margin-bottom: -40px;
     margin-left: -1px;
@@ -752,6 +776,25 @@ div.navbar.navbar-inverse.navbar-bottom{
    margin-left: -10px; 
 }
 
+strong#socialbtns{
+  margin-right: 43%; 
+}
+
+a#sbtn1.btn.btn-social-icon.btn-facebook{
+  margin-right: 39.5%;
+  margin-top: -28px; 
+}
+
+a#sbtn2.btn.btn-social-icon.btn-twitter{
+  margin-right: 36%;
+  margin-top: -37px;
+}
+
+a#sbtn3.btn.btn-social-icon.btn-google{
+ margin-right: 33%;
+ margin-top: -38.9px; 
+}
+
 /*Reviews Page*/ 
 
 ol#rolreview{
@@ -790,6 +833,11 @@ hr#articlehr{
 
 h3.articleHeader{
   margin-left: -14px;  
+}
+
+h3.articleHeader2{
+  margin-left: -14px;
+  margin-top: 10%;  
 }
 
 div.articlecontent{
@@ -920,6 +968,25 @@ div#TopFive.col-md-4{
 
 #TopFive h4{
   margin-left: 29%  
+}
+
+strong#socialbtns{
+ margin-top: -30px;
+ font-size: 12px;
+ margin-right: 46%;   
+}
+
+a#sbtn1.btn.btn-social-icon.btn-facebook{
+ margin-right: 53%;
+ margin-top: -38px;   
+}
+
+a#sbtn2.btn.btn-social-icon.btn-twitter{
+ margin-right: 49%;   
+}
+
+a#sbtn3.btn.btn-social-icon.btn-google{
+ margin-right: 45.4%;   
 }
 
 /*Reviews Page*/ 
