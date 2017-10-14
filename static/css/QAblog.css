@@ -424,7 +424,7 @@ img#article-img {
     height: 280px;
 }
 
-div.articlescroll{
+div.articlescroll {
     width: 509px;
     height: 194vh;
     overflow-x: hidden;
@@ -914,7 +914,7 @@ div#logs.col-md-12{
 }
 
 /* Extra small devices (phones, less than 768px)*/
-@media only screen and (min-width : 360px) and (max-width : 640px){
+@media only screen and (max-width : 640px){
  
 /*Home Page*/
 
