@@ -52,12 +52,6 @@ I will create a model and a view for Popular stories so they can be updated thro
 
 ## What was kept
  
-- Flask py file - This was kept and modified as needed.
-- CSV file - Upload this file to my database unchanged. This file can 
-  be downloaded from [donorschoose.org](http://www.donorschoose.org).
-- graph.js - This file was modified in order to link to my flask py file.
-- These files were kept and unchanged: Crossfilter.js, d3.js, dc.js, intro.js, jquery.min.js,
-  keen.min.js, queue.js, dc.css, and introjs.cs.
   
 ## Deployment
 
