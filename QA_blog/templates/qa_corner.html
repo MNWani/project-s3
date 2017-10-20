@@ -20,9 +20,9 @@
     <div class="row">
         <div class="span12">
             <form id="custom-search-form" class="form-search form-horizontal pull-right">
-                <div class="input-append span12">
-                    <input type="text" class="search-query" placeholder="Search">
-                    <button type="submit" class="btn btn-link"><i class="icon-search"></i></button>
+                <div class = "ui-widget">
+                    <label for = "automplete-2"></label>
+                    <input id = "automplete-2" placeholder="Search...">
                 </div>
             </form>
         </div>
@@ -34,12 +34,12 @@
 {% block subscribe %}
 {% endblock %}
 {% for videos in video_info %}
-<div class="container">
+<div class="container" id="videocontainer{{ videos.id }}">
     <div class="row">
         <div id="video1" class="col-md-4">
             <span class="video"><iframe width="450" height="250" src="{{ videos.link }}" frameborder="0" allowfullscreen></iframe></span>
             <h4 id="videotitle">{{ videos.title }}</h4>
-            <p class="video2">{{ videos.description }}</p>
+         <p class="video2">{{ videos.description }}</p>
         </div>
         <hr id="vidhr">
         <div class="col-md-4">

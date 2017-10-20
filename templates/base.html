@@ -7,6 +7,7 @@
     <title>The QA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
     <link rel="stylesheet" href="{% static "css/QAblog.css" %}">
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
     <link rel="stylesheet" href="{% static "font-awesome-4.7.0/css/font-awesome.min.css" %}">
     <link rel="shortcut icon" href="{% static 'favicon/favicon.ico' %}"/>
 </head>
@@ -198,6 +199,9 @@
 </div>
 {% endblock %}
 
+{% block qavids2 %}
+{% endblock %}
+
 {% block TopFive %}
     <div class="col-md-4" id="TopFive">
     <div class="container">
@@ -254,13 +258,10 @@
               <div class="thumbnail center well well-small text-center">
                 <img id="newsimg" src="/static/images/logoA.png" alt="">
                 <p>Subscribe to our weekly Newsletter.</p>
-                <form action="" method="post">
-                    <div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span>
-                        <input type="text" id="" name="" placeholder="your@email.com">
-                    </div>
+                <form>
                      <br />
                     {% if user.is_authenticated %}
-                      <input id="newssubscribe"type="submit" value="Subscribe Now!" class="btn btn-large" />
+                      <input id="newssubscribe" value="Subscribe Now!" class="btn btn-large" />
                     {% else %}
                       <li id="subsbox"><a href="{% url 'login' %}"><strong id="subsboxtxt">Log in to subscribe</strong></a></li>
                     {% endif %} 
@@ -300,7 +301,9 @@
 
 <!-- script references -->
 <script src="{% static "js/jquery-3.2.1.js" %}"></script>
-<script src="{% static "js/rango-jquery.js" %}"></script>
+<script src="{% static "js/QA-jquery.js" %}"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+crossorigin="anonymous"></script>
 <script src="{% static "font-awesome-4.7.0/css/font-awesome.min.css" %}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
