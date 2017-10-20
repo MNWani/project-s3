@@ -429,7 +429,7 @@ div.articlescroll {
   height: 194vh;
   overflow-x: hidden;
   overflow-y: scroll;
-  margin-left: 13.9%;
+  margin-left: 90px;
   margin-bottom: -3%;
   background-color: #fff;
   padding: 15px;
@@ -922,6 +922,15 @@ div#logs.col-md-12{
   margin-bottom: 11%; 
 }
 
+/*Signup Page*/
+div#signs.modal-dialog{
+  width: 80%;
+}
+
+div#signupanel.panel-body{
+  margin-left: 30px;
+}
+
 }
 
 /* Extra small devices (phones, less than 768px)*/
@@ -1003,6 +1012,12 @@ a#sbtn2.btn.btn-social-icon.btn-twitter{
 
 a#sbtn3.btn.btn-social-icon.btn-google{
   margin-right: 45.4%;   
+}
+
+
+div.thumbnail.center.well.well-small.text-center{
+  width: 120%;
+  margin-left: -18px;
 }
 
 /*Reviews Page*/ 
@@ -1090,9 +1105,6 @@ div#signs.modal-dialog{
   width: 80%;   
   margin-left: 10%;
 }
-
-/*
-
 
 }
 
