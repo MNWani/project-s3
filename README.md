@@ -49,6 +49,8 @@ Users can comment on the news posts through a Disqus account and can also share 
 - Made sure there was compatibility with different browser platforms. This project was
   tested on; Safari, Chrome, Firefox, Opera, and MS Edge.
 - Tested responsiveness and compatibility on mobile devices, IOS and Android.
+- Disqus commenting and sharing posts tested. 
+- Paypal Sandbox transactions were checked.
 
 ## What was kept
 Disqus integration was kept.
