@@ -19,8 +19,7 @@ urlpatterns = [
     url(r'^QA_blog/signup/$', QA_blog_views.signup, name='signup'),
     url(r'^QA_blog/login/$', auth_views.login, {'template_name': 'registration/login.html'}, name='login'),
     url(r'^QA_blog/logout/$', auth_views.logout, {'template_name': 'registration/logout.html'}, name='logout'),
-    url(r'^a-very-hard-to-guess-url/', include(paypal_urls)),
+    url(r'^qa-paypal-sands/', include(paypal_urls)),
     url(r'^QA_blog/paypal-return', paypal_views.paypal_return),
     url(r'^QA_blog/paypal-cancel', paypal_views.paypal_cancel),
 ]
-

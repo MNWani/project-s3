@@ -58,7 +58,7 @@ class Article(models.Model):
 
     def __unicode__(self):
         return self.headline
-        
+
 class Video(models.Model):
     title = models.CharField(max_length=70)
     description = models.CharField(max_length=200)
@@ -80,11 +80,8 @@ class Video(models.Model):
             "return_url": "%s/paypal-return" % settings.SITE_URL,
             "cancel_return": "%s/paypal-cancel" % settings.SITE_URL
         }
- 
+
         return PayPalPaymentsForm(initial=paypal_dict)
- 
+
     def __unicode__(self):
         return self.title
-
-
-    

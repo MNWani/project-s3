@@ -139,5 +139,5 @@ MEDIA_URL = '/media/'
 LOGIN_REDIRECT_URL = 'home'
 
 SITE_URL = 'http://127.0.0.1:8000/QA_blog/'
-PAYPAL_NOTIFY_URL = 'http://127.0.0.1/a-very-hard-to-guess-url/'
+PAYPAL_NOTIFY_URL = 'http://127.0.0.1/qa-paypal-sands/'
 PAYPAL_RECEIVER_EMAIL = 'mncursebusiness@hotmail.com'
