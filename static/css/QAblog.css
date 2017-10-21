@@ -1,3 +1,4 @@
+/* Large devices (large desktops, 1200px and up) */
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -15,7 +16,7 @@ html, body {
   background-color: #333333;
 }
 
-/*Home Page*/ 
+/*Home Page*/
 
 div.outer-wrapper{
   max-width: 1133px;
@@ -120,25 +121,25 @@ footer {
 strong#socialbtns{
   float: right;
   margin-top: 15px;
-  color: white;  
+  color: white;
 }
 
 a#sbtn1.btn.btn-social-icon.btn-facebook{
   float: right;
   margin-right: -35%;
-  margin-top: -11px;  
+  margin-top: -11px;
 }
 
 a#sbtn2.btn.btn-social-icon.btn-twitter{
   float: right;
   margin-right: -43%;
-  margin-top: -11px;  
+  margin-top: -11px;
 }
 
 a#sbtn3.btn.btn-social-icon.btn-google{
   float: right;
   margin-right: -50%;
-  margin-top: -11px;  
+  margin-top: -11px;
 }
 
 div.navbar.navbar-inverse.navbar-bottom{
@@ -308,7 +309,7 @@ a, a:hover {
 
 img.thumbnail{
   max-width: 100%;
-  height: 148.8px; 
+  height: 148.8px;
 }
 
 .img-container {
@@ -395,7 +396,7 @@ strong#subsboxtxt {
 }
 
 strong#subsboxtxt:hover {
-  color: #ea1717; 
+  color: #ea1717;
 }
 
 /*Reviews Page*/
@@ -475,7 +476,7 @@ img.reviewsimg{
 #reviewtitle h4{
   color: black;
   font-weight: bold;
-  margin-left: 7.8%;  
+  margin-left: 7.8%;
 }
 
 #reviewtitle2 h5{
@@ -679,6 +680,10 @@ button#signbutton:hover{
   color: #ea1717;
 }
 
+div#signupanel.panel-body{
+  margin-left: 25px;
+}
+
 div#signslog.col-md-12{
   margin-bottom: -25px;
 }
@@ -691,13 +696,13 @@ h2#logouttxt{
   margin-left: 60px;
   color: #353434;
   font-size: 20px;
-} 
+}
 
 /* Small devices (tablets, 768px and up) */
 
 @media screen and (max-width: 768px) {
 
-/*Home Page*/ 
+/*Home Page*/
 
 #masthead h1 {
   font-size: 80px;
@@ -714,7 +719,7 @@ div#myCarousel.carousel.slide{
 
 hr#carouhr{
   width: 727px;
-  margin-left: 21px; 
+  margin-left: 21px;
 }
 
 div.homeimghead{
@@ -723,13 +728,13 @@ div.homeimghead{
 
 div#posthead{
   margin-left: 43.5%;
-  margin-top: 22px;  
+  margin-top: 22px;
 }
 
 div.homeimgtxt{
   margin-left: -54%;
   margin-bottom: 20px;
-  font-size: 13.5px; 
+  font-size: 13.5px;
 }
 
 img.thumbnail{
@@ -757,16 +762,16 @@ div.panel-body{
 }
 
 div#postxt.col-xs-9{
-  width: 100%; 
+  width: 100%;
 }
 
 hr#posthr{
-  width: 86.2%; 
+  width: 86.2%;
 }
 
 img.rhomeimg{
   width: 400px;
-  height: 230px; 
+  height: 230px;
 }
 
 #TopFive h4{
@@ -775,7 +780,7 @@ img.rhomeimg{
 
 div#subcribehm.row{
   margin-top: 30px;
-  margin-left: 38%; 
+  margin-left: 38%;
   margin-bottom: -20px;
 }
 
@@ -784,16 +789,16 @@ input#newssubscribe.btn.btn-large{
 }
 
 div.navbar.navbar-inverse.navbar-bottom{
-  margin-left: -10px; 
+  margin-left: -10px;
 }
 
 strong#socialbtns{
-  margin-right: 43%; 
+  margin-right: 43%;
 }
 
 a#sbtn1.btn.btn-social-icon.btn-facebook{
   margin-right: 39.5%;
-  margin-top: -28px; 
+  margin-top: -28px;
 }
 
 a#sbtn2.btn.btn-social-icon.btn-twitter{
@@ -803,10 +808,10 @@ a#sbtn2.btn.btn-social-icon.btn-twitter{
 
 a#sbtn3.btn.btn-social-icon.btn-google{
   margin-right: 33%;
-  margin-top: -38.9px; 
+  margin-top: -38.9px;
 }
 
-/*Reviews Page*/ 
+/*Reviews Page*/
 
 ol#rolreview{
   margin-left: 40.4%;
@@ -819,13 +824,13 @@ ol#rolreview{
 }
 
 ol#rolreview{
-  margin-top: 11%;  
+  margin-top: 11%;
 }
 
 div#posthead2{
-  position: absolute; 
+  position: absolute;
   z-index: 10;
-  margin-top: 142%; 
+  margin-top: 142%;
   margin-top:154.5%;
   margin-left: 32.8%;
 }
@@ -839,24 +844,24 @@ div.articlescroll{
 }
 
 hr#articlehr{
-  margin-left: -14px;  
+  margin-left: -14px;
 }
 
 h3.articleHeader{
-  margin-left: -14px;  
+  margin-left: -14px;
 }
 
 h3.articleHeader2{
   margin-left: -14px;
-  margin-top: 10%;  
+  margin-top: 10%;
 }
 
 div.articlecontent{
-  margin-left: -14px;  
+  margin-left: -14px;
 }
 
 div.articlecontent strong{
-  margin-left: -5px;  
+  margin-left: -5px;
 }
 
 p.artbottxt{
@@ -865,23 +870,23 @@ p.artbottxt{
 
 #reviewtitle h4{
   color: black;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 /*QA Corner Page*/
 
 form#custom-search-form.form-search.form-horizontal.pull-right{
-  margin-right: 33px;  
+  margin-right: 33px;
 }
 
 div#guidePP.col-md-4{
-  margin-bottom: 15%;  
+  margin-bottom: 15%;
 }
 
 hr#vidhr{
   width: 60%;
   margin-left: 14px;
-  margin-top: -35px;  
+  margin-top: -35px;
 }
 
 img#guideimg{
@@ -898,28 +903,28 @@ div.viddes{
 div.viddes2{
   width: 45%;
   margin-top: 1%;
-  margin-left: 30%;  
+  margin-left: 30%;
 }
 
 div.viddes3{
   margin-left: 30.3%;
-  margin-top: 10px;   
+  margin-top: 10px;
 }
 
 div.viddes4{
   margin-left: 37%;
-  margin-top: -16px;  
+  margin-top: -16px;
 }
 
 li#qabuy{
-  margin-left: 30%;  
+  margin-left: 30%;
 }
 
 /*Login Page*/
 
 div#logs.col-md-12{
   margin-top: 20%;
-  margin-bottom: 11%; 
+  margin-bottom: 11%;
 }
 
 /*Signup Page*/
@@ -935,13 +940,13 @@ div#signupanel.panel-body{
 
 /* Extra small devices (phones, less than 768px)*/
 @media only screen and (max-width : 640px){
- 
+
 /*Home Page*/
 
 ul.nav.navbar-nav{
   position: relative;
   display: inline-flex;
-  margin-bottom: -5px;  
+  margin-bottom: -5px;
 }
 
 li.navtxt{
@@ -949,11 +954,11 @@ li.navtxt{
 }
 
 div#myCarousel.carousel.slide{
-  width: 93.7%;  
+  width: 93.7%;
 }
 
 div.homeimghead{
-  margin-left: 40%;  
+  margin-left: 40%;
 }
 
 hr#carouhr{
@@ -962,15 +967,15 @@ hr#carouhr{
 
 div.panel.v-scroll{
   margin-left: -6.7%;
-  width: 120%; 
+  width: 120%;
 }
 
 div#posthead{
-  margin-left: 42.3%; 
+  margin-left: 42.3%;
 }
 
 hr#posthr{
-  width: 80.7%;   
+  width: 80.7%;
 }
 
 div#postxt.col-xs-9{
@@ -978,16 +983,16 @@ div#postxt.col-xs-9{
 }
 
 div#postxt2.col-xs-9{
-  width: 82%;   
+  width: 82%;
 }
 
 div#TopFive.col-md-4{
   width: 100%;
-  margin-left: 3.4%;  
+  margin-left: 3.4%;
 }
 
 #TopFive h4{
-  margin-left: 29%  
+  margin-left: 29%
 }
 
 input#newssubscribe.btn.btn-large{
@@ -998,20 +1003,20 @@ input#newssubscribe.btn.btn-large{
 strong#socialbtns{
   margin-top: -30px;
   font-size: 12px;
-  margin-right: 46%;   
+  margin-right: 46%;
 }
 
 a#sbtn1.btn.btn-social-icon.btn-facebook{
   margin-right: 53%;
-  margin-top: -38px;   
+  margin-top: -38px;
 }
 
 a#sbtn2.btn.btn-social-icon.btn-twitter{
-  margin-right: 49%;   
+  margin-right: 49%;
 }
 
 a#sbtn3.btn.btn-social-icon.btn-google{
-  margin-right: 45.4%;   
+  margin-right: 45.4%;
 }
 
 
@@ -1020,14 +1025,14 @@ div.thumbnail.center.well.well-small.text-center{
   margin-left: -18px;
 }
 
-/*Reviews Page*/ 
+/*Reviews Page*/
 
 div#hrcon.container{
   margin-left: -64%;
 }
 
 h3.articleHeader2{
-  margin-top: -49%;   
+  margin-top: -49%;
 }
 
 p.reviewp{
@@ -1037,74 +1042,73 @@ p.reviewp{
 #reviewtitle h4{
   margin-top: 125%;
   width: 100%;
-  margin-left: 23%;    
+  margin-left: 23%;
 }
 
 div.articlescroll{
-  margin-left: 18%;   
+  margin-left: 18%;
 }
 
 h3.articleHeader{
-  margin-top: -49%;   
+  margin-top: -49%;
 }
 
 div.articlecontent{
-  width: 87%;   
+  width: 87%;
 }
 
 hr#articlehr{
-  width: 88%;   
+  width: 88%;
 }
 
 /*QA Corner Page*/
 
 hr#vidhr{
   margin-bottom: 10%;
-  width:47.5%;   
+  width:47.5%;
 }
 
 div.videoscroll{
-  margin-left: 13%;   
+  margin-left: 13%;
 }
 
 h5#searchbar{
-  margin-left: 79%;   
+  margin-left: 79%;
 }
 
 img#guideimg{
-  margin-top: -8%;   
+  margin-top: -8%;
 }
 
 div.viddes{
   margin-top: -23%;
-  margin-left: 26%;  
-  margin-bottom: 1%; 
+  margin-left: 26%;
+  margin-bottom: 1%;
 }
 
 div.viddes2{
   margin-left: 26%;
-  width: 35%;   
+  width: 35%;
 }
 
 div.viddes3{
-  margin-left: 26%;   
+  margin-left: 26%;
 }
 
 li#qabuy{
-  margin-left: 26%;   
+  margin-left: 26%;
 }
 
 div.viddes4{
   margin-left: 32%;
-  margin-top: -14px;   
+  margin-top: -14px;
 }
 
 /*Signup Page*/
 
 div#signs.modal-dialog{
-  width: 80%;   
+  width: 80%;
   margin-left: 10%;
 }
 
 }
-
