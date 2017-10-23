@@ -13,4 +13,3 @@ wheel==0.24.0
 django-paypal==0.2.7
 stripe
 font-awesome==4.7.0
-git+https://github.com/MNWani/project-s3.git
