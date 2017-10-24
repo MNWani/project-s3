@@ -113,10 +113,10 @@ MEDIA_URL = '/media/'
 
 # Storages
 
-AWS_STORAGE_BUCKET_NAME = 'arn:aws:s3:::theqablog'
+AWS_STORAGE_BUCKET_NAME = 'theqablog'
 AWS_S3_REGION_NAME = 'eu-west-2'  # e.g. us-east-2
 AWS_ACCESS_KEY_ID = 'AKIAJUXJU6NWMVFHNFPA'
-AWS_SECRET_ACCESS_KEY = '1Hx86X+rvpH+fhaxy83cZRnrq3mPy3HDp491Ghij '
+AWS_SECRET_ACCESS_KEY = '1Hx86X+rvpH+fhaxy83cZRnrq3mPy3HDp491Ghij'
 
 # Tell django-storages the domain to use to refer to static files.
 
