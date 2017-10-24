@@ -120,7 +120,8 @@ AWS_SECRET_ACCESS_KEY = '1Hx86X+rvpH+fhaxy83cZRnrq3mPy3HDp491Ghij '
 
 # Tell django-storages the domain to use to refer to static files.
 
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com/static/' % AWS_STORAGE_BUCKET_NAME
+STATIC_ROOT = STATIC_URL
 
 # Staticfiles (when you run `collectstatic`).
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
