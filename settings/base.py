@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'disqus',
     'paypal.standard.ipn',
+    'storages',
 ]
 
 LOGIN_URL = '/login/'
@@ -108,3 +109,26 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+
+# Storages
+
+AWS_STORAGE_BUCKET_NAME = 'theqablog'
+AWS_S3_REGION_NAME = 'eu-west-2'  # e.g. us-east-2
+AWS_ACCESS_KEY_ID = 'AKIAJUXJU6NWMVFHNFPA'
+AWS_SECRET_ACCESS_KEY = '1Hx86X+rvpH+fhaxy83cZRnrq3mPy3HDp491Ghij '
+
+# Tell django-storages the domain to use to refer to static files.
+
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+
+# Staticfiles (when you run `collectstatic`).
+
+STATICFILES_LOCATION = 'static'
+STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+
+# Mediafiles (when you run `collectstatic`).
+
+MEDIAFILES_LOCATION = 'media'
+DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+
