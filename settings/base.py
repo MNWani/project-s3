@@ -98,6 +98,17 @@ USE_TZ = True
 DISQUS_WEBSITE_SHORTNAME = 'QAblog'
 SITE_ID = 1
 
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
 
 AWS_S3_OBJECT_PARAMETERS = {
     'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
@@ -105,7 +116,7 @@ AWS_S3_OBJECT_PARAMETERS = {
 }
 
 AWS_STORAGE_BUCKET_NAME = 'thqablogmain'
-AWS_S3_REGION_NAME = 'eu-west-2' # e.g. us-east-2
+AWS_S3_REGION_NAME = 'eu-west-2'  # e.g. us-east-2
 AWS_ACCESS_KEY_ID = 'AKIAIQ3ITTBLKAKFZRTQ'
 AWS_SECRET_ACCESS_KEY = 'Q14yiGN8mpjgMR0xi9bYc9Wd/RorhJyDUOM9XABg'
 
@@ -116,3 +127,11 @@ AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 # you run `collectstatic`).
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
+# Tell the staticfiles app to use S3Boto3 storage when writing the collected static files (when
+# you run `collectstatic`).
+
+STATICFILES_LOCATION = 'static'
+STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+
+MEDIAFILES_LOCATION = 'media'
+DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
