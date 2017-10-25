@@ -95,41 +95,34 @@ USE_L10N = True
 
 USE_TZ = True
 
+# Storages
+
+AWS_S3_OBJECT_PARAMETERS = {
+    'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+    'CacheControl': 'max-age=94608000',
+}
+
+AWS_STORAGE_BUCKET_NAME = 'thqablogmain'
+AWS_ACCESS_KEY_ID = 'AKIAIQ3ITTBLKAKFZRTQ'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_AUTO_CREATE_BUCKET = False
+AWS_QUERYSTRING_AUTH = False
+AWS_S3_SECURE_URLS = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
+AWS_S3_CALLING_FORMAT = 'boto.s3.connection.OrdinaryCallingFormat'
+AWS_S3_HOST = 's3-sa-east-1.amazonaws.com'
+AWS_S3_CUSTOM_DOMAIN = AWS_STORAGE_BUCKET_NAME
 
-STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
-)
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
-
-
-# Storages
-
-AWS_STORAGE_BUCKET_NAME = 'theqablog'
-AWS_S3_REGION_NAME = 'eu-west-2'  # e.g. us-east-2
-AWS_ACCESS_KEY_ID = 'AKIAJUXJU6NWMVFHNFPA'
-AWS_SECRET_ACCESS_KEY = '1Hx86X+rvpH+fhaxy83cZRnrq3mPy3HDp491Ghij'
-
-# Tell django-storages the domain to use to refer to static files.
-
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com/static/' % AWS_STORAGE_BUCKET_NAME
-
-# Staticfiles (when you run `collectstatic`).
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+MEDIA_URL = 'http://%s/' % AWS_STORAGE_BUCKET_NAME
+STATICFILES_STORAGE = DEFAULT_FILE_STORAGE
+STATIC_URL = MEDIA_URL
 
 STATICFILES_LOCATION = 'static'
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 
-# Mediafiles (when you run `collectstatic`).
-
 MEDIAFILES_LOCATION = 'media'
-DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+
 
