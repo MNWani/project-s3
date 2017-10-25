@@ -38,6 +38,8 @@ Users can comment on the news posts through a Disqus account and can also share 
     entirely in the cloud.
 - [PayPal](https://developer.paypal.com/developer/accounts/)
   - **PayPal Sandbox** The PayPal Sandbox is a self-contained, virtual testing environment that mimics the live PayPal production environment. It provides a shielded space where you can initiate and watch your application process the requests you make to the PayPal APIs without touching any live PayPal accounts.
+- [Whitenoise](http://whitenoise.evans.io/en/stable/)
+  - **Whitenoise** With a couple of lines of config WhiteNoise allows your web app to serve its own static files, making it a self-contained unit that can be deployed anywhere without relying on nginx, Amazon S3 or any other external service. (Especially useful on Heroku, OpenShift and other PaaS providers.)
 
 ## Testing
 
@@ -51,6 +53,7 @@ Users can comment on the news posts through a Disqus account and can also share 
 - Tested responsiveness and compatibility on mobile devices, IOS and Android.
 - Disqus commenting and sharing posts tested. 
 - Paypal Sandbox transactions were checked.
+- Created users to test user functionality.
 
 ## What was kept
 Disqus integration was kept.
