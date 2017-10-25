@@ -1,3 +1,4 @@
+gunicorn==19.7.1
 amqp==1.4.9
 anyjson==0.3.3
 asn1crypto==0.22.0
@@ -39,7 +40,6 @@ feedparser==5.2.1
 funcsigs==1.0.2
 future==0.15.2
 futures==3.1.1
-gunicorn==19.0.0
 html5lib==0.999999999
 hyperlink==17.3.0
 idna==2.6
