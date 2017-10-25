@@ -97,6 +97,8 @@ USE_TZ = True
 DISQUS_WEBSITE_SHORTNAME = 'QAblog'
 SITE_ID = 1
 
+STATIC_URL = '/static/'
+
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
