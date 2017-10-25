@@ -113,8 +113,8 @@ AWS_S3_OBJECT_PARAMETERS = {
     'CacheControl': 'max-age=94608000',
 }
 
+
 AWS_STORAGE_BUCKET_NAME = 'http://theqablog-static-media.s3-website.eu-west-2.amazonaws.com/'
-AWS_S3_REGION_NAME = 'eu-west-2'  # e.g. us-east-2
 AWS_ACCESS_KEY_ID = ''
 AWS_SECRET_ACCESS_KEY = ''
 
