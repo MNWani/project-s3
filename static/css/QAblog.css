@@ -1112,3 +1112,24 @@ div#signs.modal-dialog{
 }
 
 }
+
+@media only screen and (max-width: 360px) {
+
+div#myCarousel.carousel.slide {
+    width: 88.6%;
+}
+  
+div#homeimgrow.row{
+  margin-left: 59%;
+  width: 100%;
+}
+
+div.homeimghead {
+    margin-left: 32%;
+}
+
+img.thumbnail {
+    height: 160px;
+}
+
+}
