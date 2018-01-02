@@ -1115,16 +1115,9 @@ div#signs.modal-dialog{
 
 @media only screen and (max-width: 360px) {
 
-div.outer-wrapper {
-    max-width: 360px;
-    margin: 0 auto;
-    background-color: #FFF;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
-
 div#myCarousel.carousel.slide {
-    width: 88%;
-    margin-left: 4%;
+    width: 316px;
+    margin-left: 22px;
 }
   
 div#homeimgrow.row{
@@ -1132,12 +1125,5 @@ div#homeimgrow.row{
   width: 100%;
 }
 
-div.homeimghead {
-    margin-left: 32%;
 }
 
-img.thumbnail {
-    height: 160px;
-}
-
-}
