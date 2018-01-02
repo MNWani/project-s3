@@ -1126,6 +1126,10 @@ div#myCarousel.carousel.slide {
     width: 88.6%;
     margin-left: 5.7%;
 }
+
+div.homeimgtxt {
+    margin-left: -70%;
+}
   
 div#homeimgrow.row{
   margin-left: 59%;
