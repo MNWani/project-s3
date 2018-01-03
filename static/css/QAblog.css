@@ -1115,6 +1115,13 @@ div#signs.modal-dialog{
 
 @media only screen and (min-width: 360px) and (max-width: 412px){
 
+div.outer-wrapper {
+    max-width: 412px;
+    margin: 0 auto;
+    background-color: #FFF;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
 div#myCarousel.carousel.slide {
     width: 368px;
     margin-left: 22px;
