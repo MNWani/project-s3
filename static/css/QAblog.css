@@ -1123,7 +1123,6 @@ div.outer-wrapper {
 }
 
 div#myCarousel.carousel.slide {
-    width: 368px;
     margin-left: 13px;
 }
   
@@ -1133,7 +1132,7 @@ div#homeimgrow.row{
 }
 
 div.homeimghead {
-  margin-left: 127px;
+  margin-left: 139px;
 }
 
 }
