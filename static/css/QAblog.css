@@ -1113,35 +1113,4 @@ div#signs.modal-dialog{
 
 }
 
-@media only screen and (max-width: 412px){
-
-div.outer-wrapper {
-  max-width: 100%;
-  margin: 0 auto;
-  background-color: #FFF;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
-
-img#wrapperimg {
-  float: left;
-  width: 422px;
-  height: 52px;
-  margin-left: -15px;
-}
-
-div#myCarousel.carousel.slide {
-  margin-left: 13px;
-  width: 386px;
-}
-  
-div#homeimgrow.row{
-  margin-left: 59%;
-  width: 100%;
-}
-
-div.homeimghead {
-  margin-left: 138px;
-}
-
-}
 
