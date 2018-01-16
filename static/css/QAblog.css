@@ -1113,13 +1113,4 @@ div#signs.modal-dialog{
 
 }
 
-@media only screen and (max-width : 412px){
-
-.homeimghead h4 {
-  color: black;
-  font-weight: bold;
-  margin-left: -30%;
-}
-
-}
 
