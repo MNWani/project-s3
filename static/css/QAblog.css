@@ -1113,4 +1113,13 @@ div#signs.modal-dialog{
 
 }
 
+@media only screen and (max-width : 412px){
+
+div#myCarousel.carousel.slide{
+  margin-left: -20%;
+}
+
+}
+
+
 
