@@ -207,7 +207,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h4>Top Five: October 2017</h4>
+          <h4>Top Five:<p id="demo"></p><p id="tfyear"></p></h4>
           <ol id="rolhome">
            <li>
              <div>
@@ -306,6 +306,24 @@
 crossorigin="anonymous"></script>
 <script src="{% static "font-awesome-4.7.0/css/font-awesome.min.css" %}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+var d = new Date();
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+document.getElementById("demo").innerHTML = months[d.getMonth()];
+</script>
+<script>
+var y = new Date();
+document.getElementById("tfyear").innerHTML = y.getFullYear();
+</script>
+<script>
+var d = new Date();
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+document.getElementById("demo2").innerHTML = months[d.getMonth()];
+</script>
+<script>
+var y = new Date();
+document.getElementById("tfyear2").innerHTML = y.getFullYear();
+</script>
 
 </body>
 </html>

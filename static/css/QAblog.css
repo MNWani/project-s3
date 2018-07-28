@@ -92,13 +92,34 @@ div#TopFive.col-md-4 {
   width: 20%;
 }
 
-#TopFive h4 {
+#TopFive h4{
   color: black;
   margin-bottom: 37px;
   margin-left: 6.2%;
   margin-top: 14px;
   font-weight: bold;
 }
+
+p#demo{
+  margin-left: 84px;
+  margin-top: -18.4px;
+}
+
+p#tfyear{
+  margin-left: 11.7%;
+  margin-top: -28.9px;
+}
+
+p#demo2{
+  margin-left: 12%;
+  margin-top: -18.8px;
+}
+
+p#tfyear2{
+  margin-left: 15.6%;
+  margin-top: -28.9px;
+}
+
 
 button.btn.btn-primary{
   width: 564%;
