@@ -19,7 +19,7 @@ html, body {
 /*Home Page*/
 
 div.outer-wrapper{
-  max-width: 1133px;
+  max-width: 1300px;
   margin: 0 auto;
   background-color: #FFF;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -36,6 +36,10 @@ img#wrapperimg{
   width: 100%;
 }
 
+div#vboard.dashboard {
+    width: 120%;
+}
+
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -43,11 +47,16 @@ hr {
   border-top: 1px solid #686868;
 }
 
+form#custom-search-form2.form-search.form-horizontal.pull-right {
+  margin-right: -59px;
+  margin-top: 50px;
+}
+
 .panel{
   height: 230vh;
   width: 96%;
   float: left;
-  margin-bottom: -8%;
+  margin-bottom: -12.4%;
 }
 
 div.panel-body{
@@ -59,16 +68,15 @@ div.panel-body{
   overflow: scroll;
 }
 
-div.panel.v-scroll{
+div.panel.v-scroll {
   background-color: #fff;
-  margin-left: 13.9%;
+  margin-left: 5%;
   margin-top: 2%;
 }
 
 .col-xs-9{
   width: 100%;
 }
-
 
 .navbar-form input, .form-inline input {
   width: auto;
@@ -78,9 +86,18 @@ div.navbar.navbar-inverse.navbar-static-top{
   border-bottom: 1px #f5f5f5;
 }
 
-hr#carouhr{
-  width: 1078px;
-  margin-left: 2.3%;
+hr#carouhr {
+  width: 89.3%;
+  margin-left: 5.3%;
+  background-color: #BEBEBE;
+  height: 1px;
+  border: 0;
+}
+
+hr#sbarhr {
+  width: 89.3%;
+  margin-left: 5.3%;
+  margin-top: 255px;
   background-color: #BEBEBE;
   height: 1px;
   border: 0;
@@ -95,19 +112,19 @@ div#TopFive.col-md-4 {
 #TopFive h4{
   color: black;
   margin-bottom: 37px;
-  margin-left: 6.2%;
+  margin-left: 11.9%;
   margin-top: 14px;
   font-weight: bold;
 }
 
 p#demo{
-  margin-left: 84px;
-  margin-top: -18.4px;
+  margin-left: 120px;
+  margin-top: -18.9px;
 }
 
 p#tfyear{
-  margin-left: 11.7%;
-  margin-top: -28.9px;
+  margin-left: 218px;
+  margin-top: -29px;
 }
 
 p#demo2{
@@ -120,6 +137,27 @@ p#tfyear2{
   margin-top: -28.9px;
 }
 
+div#featured.container {
+  margin-left: 65.6%;
+  margin-top: -26%;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-right: 0px;
+  width: 40%;
+}
+
+h4#feath4{
+  margin-left: 16px;
+  color: black;
+  font-weight: bold;
+  margin-top: 70px;
+  margin-bottom: 14px;
+}
+
+div#series1.row {
+
+}
+
 
 button.btn.btn-primary{
   width: 564%;
@@ -130,13 +168,6 @@ button.btn.btn-primary{
 
 div.container-fluid{
   background-color: #ea1717;
-}
-
-footer {
-  margin-top: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  width: 1134px;
 }
 
 strong#socialbtns{
@@ -178,7 +209,6 @@ div.navbar.navbar-inverse.navbar-bottom{
   background-color:  #ea1717;;
 }
 
-
 div#posthead{
   margin-left: 10%;
   margin-bottom: 2%;
@@ -187,7 +217,7 @@ div#posthead{
 
 #posthead h4 {
   color: black;
-  margin-left: -0.5%;
+  margin-left: -66px;
   font-weight: bold;
 }
 
@@ -219,16 +249,16 @@ div#postxt2.col-xs-9{
   width: 120%;
 }
 
-img.rhomeimg{
-  width: 323px;
-  height: 175px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
+img.rhomeimg {
+    width: 463px;
+    height: 240px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
 }
 
 ol#rolhome{
-  margin-left: 33px;
+  margin-left: 8.7%;
 }
 
 p.rhomep{
@@ -238,10 +268,9 @@ p.rhomep{
   font-size: 12px;
 }
 
-div#subcribehm.row{
-  margin-left: 60.5%;
-  margin-top: 108%;
-  width: 28%;
+div#subcribehm.row {
+  margin-left: 71.4%;
+  margin-top: 134%;
   font-size: 12px;
 }
 
@@ -299,11 +328,10 @@ h5 {
   color: #12AB82;
 }
 
-img#post-img{
-  margin-top: -13px;
-  margin-left: 0;
-  width: 500px;
-  height: 280px;
+img#post-img {
+    margin-top: -13px;
+    width: 600px;
+    height: 300px;
 }
 
 a, a:hover {
@@ -367,10 +395,10 @@ img.thumbnail{
 }
 
 div#myCarousel.carousel.slide{
-  height: 290px;
-  width: 920px;
+  height: 370px;
+  width: 1162px;
   margin-top: -4px;
-  margin-left: 100px;
+  margin-left: 68.4px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -388,9 +416,8 @@ div#myCarousel.carousel.slide{
   font-size: 24px;
 }
 
-div#homeimgrow.row{
-  width: 83.4%;
-  margin-left: 6.2%;
+div#homeimgrow.row {
+    margin-left: -45px;
 }
 
  div.homeimgtxt{
@@ -399,8 +426,8 @@ div#homeimgrow.row{
  }
 
  div.homeimghead{
-  margin-left: 8.9%;
   margin-bottom: 2%;
+  margin-left: 70px;
  }
 
  .homeimghead h4{
@@ -418,6 +445,44 @@ strong#subsboxtxt {
 
 strong#subsboxtxt:hover {
   color: #ea1717;
+}
+
+div#contoy.container{
+  margin-left: 80px;
+}
+
+div#col1.col-md-3{
+  width: 240px;
+}
+
+div#col2.col-md-3{
+  width: 240px;
+}
+
+div#col3.col-md-3{
+  width: 240px;
+}
+
+div#col4.col-md-3{
+  width: 240px;
+}
+
+div#col5.col-md-3{
+  width: 240px;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 1302px;
+}
+
+div.container{
+  margin-right: auto;
+  margin-left: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*Reviews Page*/
@@ -457,7 +522,6 @@ div.articlescroll {
   padding: 15px;
   padding-top: 5px;
   margin-top: 2.5%;
-
 }
 
 div.articlecontent{
